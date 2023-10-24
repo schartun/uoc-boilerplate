@@ -1,27 +1,314 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <title>Mi rincón panadero</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">Mi rincón panadero</h1>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#history">Mi História</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#recipes">Recetas</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#advices-tips">Consejos y anécdotas</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="history" id="history">
+                <div class="history__container">
+                    <!-- <div class="history__image-wrapper"> -->
+                    <!-- <img
+                            class="history__image"
+                            src="../src/assets/images/masaPan_400_400.jpg"
+                            alt="Descripción de la imagen"
+                        /> -->
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+                    <figure class="history__image-wrapper">
+                        <img
+                            class="history__image"
+                            srcset="
+                                ../src/assets/images/masaPan_320_320.jpg 320w,
+                                ../src/assets/images/masaPan_400_400.jpg 400w
+                            "
+                            sizes="(max-width: 600px) 320px, 400px"
+                            src="../src/assets/images/masaPan_320_320.jpg"
+                            alt="Masa_Pan"
+                        />
+                        <figcaption class="history__caption">
+                            Masa Pan | Ivan Schartun | Dominio público
+                        </figcaption>
+                    </figure>
+                    <!-- </div> -->
+                    <div class="history__text-content">
+                        <h2 class="history__title">Mi historía</h2>
+                        <p class="history__paragraph">
+                            ¿Alguna vez te has preguntado cómo me convertí en un
+                            apasionado de la panadería? Pues te voy a contar una
+                            historia que te va a sorprender. Resulta que yo era
+                            un fanático de los dulces, sobre todo de los
+                            pasteles, tartas y galletas. Así que decidí
+                            apuntarme a un curso de pastelería para aprender a
+                            hacer mis propios postres. Pero resulta que el curso
+                            tenía una trampa: antes de entrar en el mundo de la
+                            repostería, había que pasar por el de la panadería.
+                            Y yo, que no tenía ni idea de cómo hacer pan, me vi
+                            obligado a aprender las técnicas básicas de este
+                            arte milenario. Al principio me pareció un rollo,
+                            pero poco a poco fui descubriendo la magia de la
+                            masa, la levadura, el horno y el amasado. Me di
+                            cuenta de que hacer pan era mucho más que mezclar
+                            ingredientes: era una ciencia, un arte y una
+                            terapia. Y así, sin darme cuenta, me enamoré de la
+                            panadería y de sus infinitas posibilidades. Ahora no
+                            puedo pasar un día sin hornear un pan diferente, y
+                            cada vez que lo hago siento que estoy creando una
+                            obra de arte comestible. Y lo mejor de todo es que
+                            todavía me gustan los postres, así que puedo
+                            combinar mis dos pasiones y hacer delicias como pan
+                            de chocolate, pan de plátano o pan de canela. ¿A que
+                            suena bien? Pues si quieres saber más sobre mi
+                            aventura panadera, no te pierdas mi blog, donde
+                            comparto recetas, consejos y anécdotas divertidas
+                            sobre este maravilloso mundo.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="recipes" id="recipes">
+                <div class="recipes__container">
+                    <div class="recipes__title-wraper">
+                        <h2 class="recipes__title">Recetas</h2>
+                    </div>
+
+                    <ul class="recipes__wrapper">
+                        <li class="recipes__item">
+                            <figure class="recipes__image-wrapper">
+                                <img
+                                    class="recipes__item-image"
+                                    srcset="
+                                        ../src/assets/images/Pan_Jamon_100_100.jpg 100w,
+                                        ../src/assets/images/Pan_Jamon_200_200.jpg 200w
+                                    "
+                                    sizes="(max-width: 600px) 100px, 200px"
+                                    src="../src/assets/images/Pan_Jamon_100_100.jpg"
+                                    alt="Masa_Pan"
+                                />
+                                <figcaption class="recipes__caption">
+                                    Pan de Jamón | WIlfredo Rodriguez |
+                                    Attribution-ShareAlike
+                                </figcaption>
+                            </figure>
+                            <h3 class="recipes__item-title">Pan de jamón</h3>
+                            <ol class="recipes__directions">
+                                <li class="directions__item">
+                                    Mezcla 500 g de harina de trigo, 25 g de
+                                    levadura fresca, una cucharadita de sal y
+                                    una cucharada de azúcar en un bol grande.
+                                </li>
+                                <li class="directions__item">
+                                    Añade 250 ml de agua tibia y amasa hasta
+                                    obtener una masa suave y elástica. Deja
+                                    reposar la masa tapada con un paño durante
+                                    una hora o hasta que doble su volumen.
+                                </li>
+                                <li class="directions__item">
+                                    Estira la masa con un rodillo sobre una
+                                    superficie enharinada y forma un rectángulo.
+                                    Unta 100 g de mantequilla derretida sobre la
+                                    masa y espolvorea 100 g de queso rallado.
+                                </li>
+                                <li class="directions__item">
+                                    Coloca 300 g de jamón cocido en lonchas
+                                    sobre el queso y enrolla la masa desde el
+                                    lado más largo. Cierra los extremos y coloca
+                                    el rollo en una bandeja de horno engrasada.
+                                </li>
+                                <li class="directions__item">
+                                    Pinta la superficie con un poco de
+                                    mantequilla derretida y hornea a 180°C
+                                    durante 40 minutos o hasta que esté dorado.
+                                </li>
+                                <li class="directions__item">
+                                    Deja enfriar el pan sobre una rejilla y
+                                    córtalo en rodajas para servir.
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="recipes__item">
+                            <figure class="recipes__image-wrapper">
+                                <img
+                                    class="recipes__item-image"
+                                    srcset="
+                                        ../src/assets/images/Pan_Jamon_100_100.jpg 100w,
+                                        ../src/assets/images/Pan_Jamon_200_200.jpg 200w
+                                    "
+                                    sizes="(max-width: 600px) 100px, 200px"
+                                    src="../src/assets/images/Pan_Jamon_100_100.jpg"
+                                    alt="Masa_Pan"
+                                />
+                                <figcaption class="recipes__caption">
+                                    Pan de Jamón | WIlfredo Rodriguez |
+                                    Attribution-ShareAlike
+                                </figcaption>
+                            </figure>
+
+                            <h3 class="recipes__item-title">Baguette</h3>
+                            <ol class="recipes__directions">
+                                <li class="directions__item">
+                                    Mezcla 500 g de harina de fuerza, 10 g de
+                                    sal y 7 g de levadura seca en un bol grande.
+                                </li>
+                                <li class="directions__item">
+                                    Añade 300 ml de agua tibia y amasa hasta
+                                    obtener una masa homogénea y pegajosa. Deja
+                                    reposar la masa tapada con un paño durante
+                                    una hora o hasta que doble su volumen.
+                                </li>
+                                <li class="directions__item">
+                                    Divide la masa en cuatro porciones iguales y
+                                    forma cuatro cilindros alargados. Coloca los
+                                    cilindros en una bandeja de horno forrada
+                                    con papel vegetal y deja levar durante media
+                                    hora más.
+                                </li>
+                                <li class="directions__item">
+                                    Haz unos cortes diagonales en la superficie
+                                    de cada cilindro con un cuchillo afilado y
+                                    espolvorea un poco de harina por encima.
+                                </li>
+                                <li class="directions__item">
+                                    Hornea a 220°C durante 20 minutos o hasta
+                                    que estén crujientes y dorados.
+                                </li>
+                                <li class="directions__item">
+                                    Deja enfriar las baguettes sobre una rejilla
+                                    y disfruta con mantequilla, queso, jamón o
+                                    lo que más te guste.
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="recipes__item">
+                            <figure class="recipes__image-wrapper">
+                                <img
+                                    class="recipes__item-image"
+                                    srcset="
+                                        ../src/assets/images/Pan_Jamon_100_100.jpg 100w,
+                                        ../src/assets/images/Pan_Jamon_200_200.jpg 200w
+                                    "
+                                    sizes="(max-width: 600px) 100px, 200px"
+                                    src="../src/assets/images/Pan_Jamon_100_100.jpg"
+                                    alt="Masa_Pan"
+                                />
+                                <figcaption class="recipes__caption">
+                                    Pan de Jamón | WIlfredo Rodriguez |
+                                    Attribution-ShareAlike
+                                </figcaption>
+                            </figure>
+
+                            <h3 class="recipes__item-title">Pan campesino</h3>
+                            <ol class="recipes__directions">
+                                <li class="directions__item">
+                                    Mezcla 400 g de harina integral, 100 g de
+                                    harina blanca, una cucharadita de sal y una
+                                    cucharadita de bicarbonato sódico en un bol
+                                    grande.
+                                </li>
+                                <li class="directions__item">
+                                    Añade 350 ml de suero de leche (o leche con
+                                    unas gotas de limón) y mezcla con una
+                                    cuchara de madera hasta formar una masa
+                                    pegajosa. No hace falta amasar.
+                                </li>
+                                <li class="directions__item">
+                                    Forma una bola con la masa y colócala en una
+                                    bandeja de horno engrasada. Haz una cruz
+                                    profunda en la parte superior con un
+                                    cuchillo afilado.
+                                </li>
+                                <li class="directions__item">
+                                    Hornea a 200°C durante 40 minutos o hasta
+                                    que al golpear la base suene hueco.
+                                </li>
+                                <li class="directions__item">
+                                    Deja enfriar el pan sobre una rejilla y
+                                    córtalo en rebanadas para comer con
+                                    mermelada, miel, queso o lo que prefieras.
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="advices-tips" id="advices-tips">
+                <div class="advices-tips__container">
+                    <div class="advices-tips__title-wrapper">
+                        <h2 class="advices-tips__title">
+                            Consejos y anécdotas
+                        </h2>
+                    </div>
+                    <div class="advices-tips__categories-wrapper">
+                        <h3 class="advices-tips__categories-title">Consejos</h3>
+                        <ul class="advices-tips__categories-list">
+                            <li class="advices-tips__categories-list-item">
+                                Un consejo que te doy es que siempre midas bien
+                                los ingredientes y los tiempos de cocción. El
+                                pan es un arte delicado que requiere precisión y
+                                paciencia.
+                            </li>
+                            <li class="advices-tips__categories-list-item">
+                                Otro consejo es que experimentes con diferentes
+                                tipos de harina, semillas, frutos secos y
+                                especias. El pan puede tener muchos sabores y
+                                texturas, y así nunca te aburrirás de comerlo.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="advices-tips__categories-wrapper">
+                        <h3 class="advices-tips__categories-title">
+                            Anécdotas
+                        </h3>
+                        <ul class="advices-tips__categories-list">
+                            <li class="advices-tips__categories-list-item">
+                                Una vez, me olvidé de ponerle levadura al pan y
+                                salió un ladrillo duro como una piedra. Menos
+                                mal que no se lo di a nadie, porque podría
+                                haberle roto los dientes.
+                            </li>
+                            <li class="advices-tips__categories-list-item">
+                                Otra vez, quise hacer un pan con forma de
+                                corazón para mi novia, pero se me quemó tanto
+                                que parecía un carbón. Ella se rió mucho y me
+                                dijo que le gustaba mi intención, pero que
+                                prefería un pan normal.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <include src="./views/footer.html"></include> -->
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__text">Desarrollado por Ivan Schartun</p>
+            </div>
+        </footer>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>
