@@ -4,11 +4,12 @@
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
+    "validate": "html-validator dist '--ignore=Trailing slash on void elements'",
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all clean stylelint parcel:build validate",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
     "stylelint": "stylelint src/**/*.scss"
   },
@@ -45,13 +46,14 @@
     "prettier": "^3.0.3",
     "rimraf": "^5.0.1",
     "sharp": "0.31.1",
-    "stylelint": "^15.10.3",
+    "stylelint": "^15.11.0",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-recess-order": "^4.3.0",
     "stylelint-config-recommended-scss": "^13.0.0",
-    "stylelint-scss": "^5.2.1"
+    "stylelint-scss": "^5.2.1",
+    "w3c-html-validator": "^1.5.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.2"
+    "aos": "^2.3.4"
   }
 }

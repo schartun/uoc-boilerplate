@@ -1,0 +1,70 @@
+@use "sass:color";
+
+.header {
+  text-align: center;
+  background-color: $lightGrayishOrange;
+  border-bottom: 4px double $veryDarkOrange;
+
+  &__container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: $fontMain;
+
+    font-size: fontSize(
+      3rem,
+      mobile
+    ); // Uso de la función para el tamaño mobile
+
+    @include respond-to(desktop) {
+      font-size: fontSize(
+        4rem,
+        desktop
+      ); // Uso de la función para el tamaño desktop
+    }
+
+    font-weight: 700;
+    color: $veryDarkOrange;
+  }
+
+  &__nav .nav__list {
+    display: flex;
+    flex-direction: column; // Stacked for mobile
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    list-style-type: none;
+
+    .nav__item a {
+      display: block;
+      padding: 0.5rem 1rem;
+      font-weight: 700;
+      color: $veryDarkBlue;
+      text-decoration: none;
+
+      &:hover {
+        background-color: color.adjust($lightGrayishCyan, $lightness: -10%);
+        // background-color: darken($lightGrayishCyan, 10%);
+      }
+    }
+  }
+
+  @include respond-to(tablet) {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: initial;
+    }
+
+    &__nav .nav__list {
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: center;
+    }
+  }
+}

@@ -1,8 +1,10 @@
+@use "sass:map";
+
 @function fontSize($size, $breakpoint) {
   $baseSize: 1; // 1rem equivale a 16px en la mayoría de los navegadores
 
   // Normalizamos el valor del breakpoint a un factor (por ejemplo, si es 1000px se convierte a 1)
-  $incrementFactor: map-get($breakpoints, $breakpoint) / 1000;
+  $incrementFactor: calc(map.get($breakpoints, $breakpoint) / 1000);
 
   // Ahora realizamos la operación en rem
   $newSize: $size + $baseSize * $incrementFactor;

@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  @include respond-to(desktop) {
+    max-width: 100%;
+  }
+}
+
+.section-title {
+  @include imageWrapperStyle($lightGrayishOrange);
+  font-size: 2rem;
+  color: $veryDarkBlue;
+}

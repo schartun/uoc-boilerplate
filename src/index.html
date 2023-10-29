@@ -8,27 +8,14 @@
             type="text/css"
             href="./assets/styles/main.scss"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <title>Mi rincón panadero</title>
     </head>
     <body>
-        <header class="header">
-            <div class="header__container">
-                <h1 class="header__title">Mi rincón panadero</h1>
-                <nav class="header__nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#history">Mi História</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#recipes">Recetas</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#advices-tips">Consejos y anécdotas</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <include src="./views/header.html"></include>
         <main class="main-content">
             <section class="history" id="history">
                 <div class="history__container">
@@ -56,17 +43,28 @@
                     </figure>
                     <!-- </div> -->
                     <div class="history__text-content">
-                        <h2 class="history__title">Mi historía</h2>
+                        <div class="history__title-wraper section-title">
+                            <h2 class="history__title">Mi historía</h2>
+                        </div>
+
                         <p class="history__paragraph">
                             ¿Alguna vez te has preguntado cómo me convertí en un
-                            apasionado de la panadería? Pues te voy a contar una
-                            historia que te va a sorprender. Resulta que yo era
-                            un fanático de los dulces, sobre todo de los
-                            pasteles, tartas y galletas. Así que decidí
-                            apuntarme a un curso de pastelería para aprender a
-                            hacer mis propios postres. Pero resulta que el curso
-                            tenía una trampa: antes de entrar en el mundo de la
-                            repostería, había que pasar por el de la panadería.
+                            <strong>apasionado de la panadería</strong>? Pues te
+                            voy a contar una <em>historia</em> que te va a
+                            sorprender.
+                        </p>
+
+                        <p class="history__paragraph">
+                            Resulta que yo era un fanático de los dulces, sobre
+                            todo de los pasteles, tartas y galletas. Así que
+                            decidí apuntarme a un curso de pastelería para
+                            aprender a hacer mis propios postres. Pero resulta
+                            que el curso tenía una trampa: antes de entrar en el
+                            mundo de la repostería, había que pasar por el de la
+                            panadería.
+                        </p>
+
+                        <p class="history__paragraph">
                             Y yo, que no tenía ni idea de cómo hacer pan, me vi
                             obligado a aprender las técnicas básicas de este
                             arte milenario. Al principio me pareció un rollo,
@@ -74,30 +72,38 @@
                             masa, la levadura, el horno y el amasado. Me di
                             cuenta de que hacer pan era mucho más que mezclar
                             ingredientes: era una ciencia, un arte y una
-                            terapia. Y así, sin darme cuenta, me enamoré de la
-                            panadería y de sus infinitas posibilidades. Ahora no
-                            puedo pasar un día sin hornear un pan diferente, y
-                            cada vez que lo hago siento que estoy creando una
-                            obra de arte comestible. Y lo mejor de todo es que
-                            todavía me gustan los postres, así que puedo
+                            terapia.
+                        </p>
+
+                        <p class="history__paragraph">
+                            Y así, sin darme cuenta, me enamoré de la panadería
+                            y de sus infinitas posibilidades. Ahora no puedo
+                            pasar un día sin hornear un pan diferente, y cada
+                            vez que lo hago siento que estoy creando una
+                            <em>obra de arte comestible</em>. Y lo mejor de todo
+                            es que todavía me gustan los postres, así que puedo
                             combinar mis dos pasiones y hacer delicias como pan
                             de chocolate, pan de plátano o pan de canela. ¿A que
-                            suena bien? Pues si quieres saber más sobre mi
-                            aventura panadera, no te pierdas mi blog, donde
-                            comparto recetas, consejos y anécdotas divertidas
-                            sobre este maravilloso mundo.
+                            suena bien?
+                        </p>
+
+                        <p class="history__paragraph">
+                            Pues si quieres saber más sobre mi
+                            <strong>aventura panadera</strong>, no te pierdas mi
+                            blog, donde comparto recetas, consejos y anécdotas
+                            divertidas sobre este maravilloso mundo.
                         </p>
                     </div>
                 </div>
             </section>
             <section class="recipes" id="recipes">
-                <div class="recipes__container">
-                    <div class="recipes__title-wraper">
+                <div class="recipes__container wrapper">
+                    <div class="recipes__title-wraper section-title">
                         <h2 class="recipes__title">Recetas</h2>
                     </div>
 
                     <ul class="recipes__wrapper">
-                        <li class="recipes__item">
+                        <li class="recipes__item" data-aos="fade-right">
                             <figure class="recipes__image-wrapper">
                                 <img
                                     class="recipes__item-image"
@@ -107,7 +113,7 @@
                                     "
                                     sizes="(max-width: 600px) 100px, 200px"
                                     src="../src/assets/images/Pan_Jamon_100_100.jpg"
-                                    alt="Masa_Pan"
+                                    alt="Pan_Jamon"
                                 />
                                 <figcaption class="recipes__caption">
                                     Pan de Jamón | WIlfredo Rodriguez |
@@ -150,20 +156,20 @@
                                 </li>
                             </ol>
                         </li>
-                        <li class="recipes__item">
+                        <li class="recipes__item" data-aos="fade-left">
                             <figure class="recipes__image-wrapper">
                                 <img
                                     class="recipes__item-image"
                                     srcset="
-                                        ../src/assets/images/Pan_Jamon_100_100.jpg 100w,
-                                        ../src/assets/images/Pan_Jamon_200_200.jpg 200w
+                                        ../src/assets/images/Baguettes_100_100.jpg 100w,
+                                        ../src/assets/images/Baguettes_200_200.jpg 200w
                                     "
                                     sizes="(max-width: 600px) 100px, 200px"
-                                    src="../src/assets/images/Pan_Jamon_100_100.jpg"
-                                    alt="Masa_Pan"
+                                    src="../src/assets/images/Baguettes_100_100.jpg"
+                                    alt="Baguettes"
                                 />
                                 <figcaption class="recipes__caption">
-                                    Pan de Jamón | WIlfredo Rodriguez |
+                                    Baguettes | Nick Thweatt |
                                     Attribution-ShareAlike
                                 </figcaption>
                             </figure>
@@ -203,20 +209,20 @@
                                 </li>
                             </ol>
                         </li>
-                        <li class="recipes__item">
+                        <li class="recipes__item" data-aos="fade-right">
                             <figure class="recipes__image-wrapper">
                                 <img
                                     class="recipes__item-image"
                                     srcset="
-                                        ../src/assets/images/Pan_Jamon_100_100.jpg 100w,
-                                        ../src/assets/images/Pan_Jamon_200_200.jpg 200w
+                                        ../src/assets/images/Pan_campesino_100_100.jpg 100w,
+                                        ../src/assets/images/Pan_campesino_200_200.jpg 200w
                                     "
                                     sizes="(max-width: 600px) 100px, 200px"
-                                    src="../src/assets/images/Pan_Jamon_100_100.jpg"
-                                    alt="Masa_Pan"
+                                    src="../src/assets/images/Pan_campesino_100_100.jpg"
+                                    alt="Pan_campesino"
                                 />
                                 <figcaption class="recipes__caption">
-                                    Pan de Jamón | WIlfredo Rodriguez |
+                                    Pan campesino | Anual |
                                     Attribution-ShareAlike
                                 </figcaption>
                             </figure>
@@ -256,8 +262,8 @@
                 </div>
             </section>
             <section class="advices-tips" id="advices-tips">
-                <div class="advices-tips__container">
-                    <div class="advices-tips__title-wrapper">
+                <div class="advices-tips__container wrapper">
+                    <div class="advices-tips__title-wrapper section-title">
                         <h2 class="advices-tips__title">
                             Consejos y anécdotas
                         </h2>
@@ -302,12 +308,7 @@
                 </div>
             </section>
         </main>
-        <!-- <include src="./views/footer.html"></include> -->
-        <footer class="footer">
-            <div class="footer__container">
-                <p class="footer__text">Desarrollado por Ivan Schartun</p>
-            </div>
-        </footer>
+        <include src="./views/footer.html"></include>
         <script type="module" src="./assets/scripts/main.js"></script>
         <!-- do not remove this line! -->
     </body>

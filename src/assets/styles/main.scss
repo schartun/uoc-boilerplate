@@ -3,26 +3,31 @@
  * Do not include SCSS code in this file.
  */
 
-/**
- * Import variables
- */
+@import "settings/variables";
+@import "tools/mixins";
+@import "tools/functions";
+@import "generic/normalize";
+@import "elements/typography";
+@import "objects/objects";
+@import "components/header";
+@import "components/main-content";
+@import "components/footer";
 
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
-@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+// @import "npm:@fortawesome/fontawesome-free/css/all.css";
+// @import "animate.css";
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "./layouts/home.scss";
+//  NA just one page
 
 /**
  * Do NOT include anything else in this file!
