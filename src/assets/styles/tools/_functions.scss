@@ -1,13 +1,12 @@
+// Import the 'sass:map' module to use the map-related functions and features.
 @use "sass:map";
 
+// Function to calculate font size based on a given size and breakpoint.
 @function fontSize($size, $breakpoint) {
-  $baseSize: 1; // 1rem equivale a 16px en la mayoría de los navegadores
+  $baseSize: 1; // 1rem is equivalent to 16px in most browsers
 
-  // Normalizamos el valor del breakpoint a un factor (por ejemplo, si es 1000px se convierte a 1)
+  // Normalize the breakpoint value to a factor (e.g., if it's 1000px, it's converted to 1).
   $incrementFactor: calc(map.get($breakpoints, $breakpoint) / 1000);
-
-  // Ahora realizamos la operación en rem
   $newSize: $size + $baseSize * $incrementFactor;
-
   @return $newSize;
 }

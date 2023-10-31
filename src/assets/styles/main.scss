@@ -1,7 +1,6 @@
 /**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
+ * Partials.
+ **/
 
 @import "settings/variables";
 @import "tools/mixins";
@@ -12,23 +11,3 @@
 @import "components/header";
 @import "components/main-content";
 @import "components/footer";
-
-/**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
-
-// @import "npm:@fortawesome/fontawesome-free/css/all.css";
-// @import "animate.css";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-//  NA just one page
-
-/**
- * Do NOT include anything else in this file!
- */

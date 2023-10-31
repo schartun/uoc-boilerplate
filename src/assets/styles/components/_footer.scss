@@ -9,16 +9,10 @@
     margin: 0 auto;
 
     .footer__text {
-      font-size: fontSize(
-        1rem,
-        mobile
-      ); // Uso de la función para el tamaño mobile
+      font-size: fontSize(1rem, mobile);
 
       @include respond-to(desktop) {
-        font-size: fontSize(
-          1.5rem,
-          desktop
-        ); // Uso de la función para el tamaño desktop
+        font-size: fontSize(1.5rem, desktop);
       }
       color: $white;
       letter-spacing: 0.05em;

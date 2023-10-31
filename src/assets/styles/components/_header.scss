@@ -15,16 +15,10 @@
     margin-bottom: 1rem;
     font-family: $fontMain;
 
-    font-size: fontSize(
-      3rem,
-      mobile
-    ); // Uso de la función para el tamaño mobile
+    font-size: fontSize(3rem, mobile);
 
     @include respond-to(desktop) {
-      font-size: fontSize(
-        4rem,
-        desktop
-      ); // Uso de la función para el tamaño desktop
+      font-size: fontSize(4rem, desktop);
     }
 
     font-weight: 700;
@@ -33,7 +27,7 @@
 
   &__nav .nav__list {
     display: flex;
-    flex-direction: column; // Stacked for mobile
+    flex-direction: column;
     padding: 0;
     margin: 0;
     font-size: 1.5em;
@@ -48,7 +42,6 @@
 
       &:hover {
         background-color: color.adjust($lightGrayishCyan, $lightness: -10%);
-        // background-color: darken($lightGrayishCyan, 10%);
       }
     }
   }

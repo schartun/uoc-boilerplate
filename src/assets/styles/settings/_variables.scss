@@ -1,10 +1,14 @@
+// Define color variables for use throughout the styles.
 $lightGrayishCyan: #c6d8da;
 $veryDarkBlue: #052d3c;
 $lightGrayishOrange: #f3f1f1;
 $veryDarkOrange: #592614;
 $white: #ffffff;
 
+// Define the main font variable for consistency.
 $fontMain: "Zilla Slab", serif;
+
+// Define breakpoints as a map, which can be used for responsive design.
 $breakpoints: (
   mobile: 30rem,
   tablet: 48rem,

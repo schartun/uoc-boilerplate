@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-// History Styles
+// History section styles
 .history {
   margin-bottom: 6rem;
   &__container {
@@ -58,83 +58,8 @@
   }
 }
 
-// Recipes Styles
-// .recipes {
-//   margin-bottom: 6rem;
-//   &__container {
-//     width: 100%;
-//     max-width: 40rem;
-//     margin: 0 auto;
-//     font-size: 1.6rem;
-//     font-weight: 300;
-
-//     @include respond-to(desktop) {
-//       max-width: 100%;
-//     }
-//   }
-
-//   &__title-wraper {
-//     @include imageWrapperStyle($lightGrayishCyan);
-//   }
-
-//   &__title {
-//     font-size: 3rem;
-//     color: $veryDarkBlue;
-//   }
-
-//   &__wrapper {
-//     list-style: none;
-//     padding: 0;
-
-//     @include respond-to(desktop) {
-//       display: flex;
-//     }
-
-//     .recipes__item {
-//       margin-top: 2rem;
-//     }
-//   }
-
-//   .recipes__item {
-//     padding-bottom: 2rem;
-//     border-bottom: 0.1rem dashed $veryDarkOrange;
-
-//     @include respond-to(desktop) {
-//       padding-right: 2rem;
-//       padding-left: 2rem;
-//       border-bottom: none;
-//     }
-//   }
-//   .recipes__image-wrapper {
-//     text-align: center;
-
-//     .recipes__caption {
-//       font-size: small;
-//     }
-//   }
-// }
-
+// Recipes section Styles
 .recipes {
-  // &__container {
-  //   width: 100%;
-  //   max-width: 40rem;
-  //   margin: 0 auto;
-  //   font-size: 1.6rem;
-  //   font-weight: 300;
-
-  //   @include respond-to(desktop) {
-  //     max-width: 100%;
-  //   }
-  // }
-
-  // &__title-wraper {
-  //   @include imageWrapperStyle($lightGrayishOrange);
-  // }
-
-  // &__title {
-  //   font-size: 3rem;
-  //   color: $veryDarkBlue;
-  // }
   font-size: 1.6rem;
   font-weight: 300;
 
@@ -160,11 +85,6 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    // &:hover {
-    //   transform: scale(1.02);
-    //   transition: transform 0.3s;
-    // }
-
     &-title {
       margin-top: 1rem;
       text-align: center;
@@ -188,29 +108,17 @@
   }
 }
 
-// Advices and tips Styles
+// Advices and tips section styles
 .advices-tips {
   margin-bottom: 6rem;
   font-size: 1.6rem;
   font-weight: 300;
   &__container {
-    // width: 100%;
-    // max-width: 40rem;
-    // margin: 0 auto;
-    // font-size: 1.6rem;
-    // font-weight: 300;
-
     @include respond-to(desktop) {
-      // max-width: 100%;
-
       .advices-tips__categories-wrapper {
         max-width: 80%;
         margin: 0 auto;
       }
     }
   }
-
-  // &__title-wrapper {
-  //   @include imageWrapperStyle($lightGrayishOrange);
-  // }
 }

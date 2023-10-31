@@ -1,3 +1,4 @@
+// Styling for a wrapper element.
 .wrapper {
   width: 100%;
   max-width: 40rem;
@@ -5,11 +6,13 @@
   font-size: 1.6rem;
   font-weight: 300;
 
+  // Responsive styling for desktop screens using the 'respond-to' mixin.
   @include respond-to(desktop) {
     max-width: 100%;
   }
 }
 
+// Styling for a section title with an image wrapper.
 .section-title {
   @include imageWrapperStyle($lightGrayishOrange);
   font-size: 2rem;
