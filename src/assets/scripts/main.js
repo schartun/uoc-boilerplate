@@ -10,3 +10,4 @@ import 'aos/dist/aos.css';
  * AOS initialitation
  */
 AOS.init();
+
